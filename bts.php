@@ -15,7 +15,7 @@
             
             <div id="Navbar" class="navbar">
                 <ul>
-                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="veille.php">Veille</a></li>
                     <li><a href="bts.php">BTS</a></li>
                     <li><a href="contact.php">Contact</a></li>
@@ -52,7 +52,7 @@
               <div id="navbar-footer-row">
                 <div class="accueil-footer">
               <ul>
-                <li><a href="index.php">Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="#block-profil">Profil</a></li>
                 <li><a href="#block-competence">Compétences</a></li>
                 <li><a href="#block2">Parcours</a></li>
