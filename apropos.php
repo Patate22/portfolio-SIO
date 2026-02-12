@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="css/style.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="css/apropos/accueil.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="css/apropos/parcours.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="css/apropos/projets.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="css/apropos/profil.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="css/apropos/competences.css?v=<?= time(); ?>">
+</head>
+
+<body>
+  <div class="portfolio">
+
+    <div id="apropos-wrapper">
+
+    <div id="apropos">
+
+      <div class="navbar" id="Navbar"> <!-- NAVBAR -->
+              <ul>
+                <li><a href="apropos.php">Accueil</a></li>
+                <li><a href="veille.php">Veille</a></li>
+                <li><a href="bts.php">BTS</a></li>
+                <li><a href="contact.php">Contact</a></li>
+              </ul>
+      </div>
+
+      <section id="block0" class="screen"> <!-- ACCUEIL -->
+        
+        <div class="inner-grid">
+
+            <div id="Contenu1-block0" class="box">
+              <div class="intro">
+                <div><h1>Alicia Courtois</h1>
+                <p>Étudiante en <strong>BTS SIO</strong> (Services Informatiques aux Organisations), <strong>option SLAM</strong> (Solutions Logicielles et Applications Métiers), orientée développement web.</p></div>
+                <div id="imgAccueil"><img src="images/accueil.png"></div>
+              </div>
+            </div>
+
+            <div id="Contenu2-block0" class="box">
+              <h2>Bienvenue sur mon Portfolio</h2>
+            </div>
+
+        </div>
+
+      </section>
+  
+      <section id="block-profil" class="screen"> <!-- A PROPOS DE MOI -->
+          
+        <div class="inner-grid">
+
+            <div id="Titre-profil" class="box">
+              <h2>MON  PROFIL</h2>
+            </div>
+
+            <div id="image-profil" class="box">
+            </div>
+
+            <div id="Contenu1-profil" class="box">
+              <h3>QUI SUIS JE ?</h3>
+              <p>Actuellement étudiante en deuxième année de <strong>BTS Services informatiques aux Organisations (SIO)</strong> avec l’option <strong>Solutions Logicielles et Applications Métiers (SLAM)</strong> . J’ai acquis de nombreuses compétences en développement front-end et back-end, ce qui me permet de me spécialiser dans le développement fullstack.</p>
+              <p>Sérieuse et motivée, je souhaite poursuivre mes études en <span class="texte-style">licence informatique</span> afin de découvrir différents domaines du développement, et si possible, suivre une <span class="texte-style">mineure en jeux vidéo</span>.
+              Mon objectif est ensuite d’intégrer un <span class="texte-style">master</span> dans le domaine qui me sera le plus adapté avant de finaliser mon parcours par une formation en design se qui me permettrait d’élargir mes compétences et de me préparer au monde professionnel. </p>
+              <p><span class="texte-style">Activités :</span> jeux vidéos, dessin, crochet, lecture.</p>
+            </div>
+
+
+            <div id="Contenu2-profil" class="box">
+              <h3>CURRICULUM VITAE</h3>
+              <div id="curriculum-row">
+              <!-- CV -->
+              <div id="cv">
+                <div><a href="files/CV.pdf" target="_blank" class="bouton">Ouvrir CV</a></div>
+                <div style="display:flex;align-items:center;justify-content:center;height:100%;"><a href="files/CV.pdf" download >
+                  <span style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;">
+                    <img src="images/download.svg" alt="Télécharger CV" class="bouton-download" style="width:32px;height:32px;max-width:32px;max-height:32px;object-fit:contain;display:block;" />
+                  </span>
+                </a></div>
+              </div>
+
+              <!-- Lettre -->
+              <div id="lettre">
+                <div><a href="files/lettre.pdf" target="_blank" class="bouton">Ouvrir Lettre</a></div>
+                <div style="display:flex;align-items:center;justify-content:center;height:100%;"><a href="files/lettre.pdf" download >
+                  <span style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;">
+                    <img src="images/download.svg" alt="Télécharger Lettre" class="bouton-download" style="width:32px;height:32px;max-width:32px;max-height:32px;object-fit:contain;display:block;" />
+                  </span>
+                </a></div>
+              </div>
+              </div>
+            </div>            
+
+          </div>
+      </section>
+
+      <section id="block-competence" class="screen">
+
+        <div class="inner-grid">
+          <div id="Competence" class="box">
+              <h2>MES COMPETENCES</h2>
+
+            <div id="flexbox-competence">
+
+              <div id="HTML" class="competences-liste">
+                <div><img src="images/competences/html.svg" alt="HTML/CSS Logo">HTML/CSS</div>
+                <ul class="competence-detail">
+                      <li>Structuration sémantique des pages HTML</li>
+                      <li>Conception de maquettes web</li>
+                      <li>Mise en page Responsive (Flexbox et Grid)</li>
+                      <li>Création d’interfaces ergonomiques et claires</li>
+                </ul>
+              </div>
+
+              <div id="PHP" class="competences-liste">
+                <div><img src="images/competences/php1.svg" alt="PHP Logo">PHP</div>
+                <ul class="competence-detail">
+                      <li>Création de pages web dynamiques</li>
+                      <li>Mise en place d’un CRUD</li>
+                      <li>Gestion des sessions et authentification des utilisateurs</li>
+                      <li>Gestion des formulaires</li>
+                </ul>
+              </div>
+
+              <div id="JSON" class="competences-liste">
+                <div><img src="images/competences/json.svg" alt="JSON Logo">JSON</div>
+                <ul class="competence-detail">
+                      <li>Lecture et écriture de fichiers JSON</li>
+                      <li>Traitement des données</li>
+                </ul>
+              </div>
+
+              <div id="SQL" class="competences-liste">
+                <div><img src="images/competences/sql.svg" alt="SQL Logo">SQL</div>
+                <ul class="competence-detail">
+                      <li>Conception de Bases de données</li>
+                      <li>Création et gestion des tables</li>
+                      <li>Requêtes SQL</li>
+                      <li>Liaison base de données / site web</li>
+                </ul>
+            </div>
+
+              <div id="Architecture" class="competences-liste">
+                <div><img src="images/competences/architecture1.svg" alt="Architecture Logo">Architecture Logicielle</div>
+                <ul class="competence-detail">
+                      <li>Utilisation du modèle Modèle Vue Contrôleurs (MVC)</li>
+                      <li>Organisation et structuration du code</li>
+                </ul>
+              </div>
+
+              <div id="Linux" class="competences-liste">
+                <div><img src="images/competences/linux.svg" alt="Linux Logo">Linux</div>
+                <ul class="competence-detail">
+                      <li>Utilisation d’un système Linux sur une machine virtuelle</li>
+                      <li>Commande de base Linux</li>
+                      <li>Installation et configuration de services simple (Apache, MySQL)</li>
+                </ul>
+              </div>
+
+              <div id="Github" class="competences-liste">
+                <div><img src="images/competences/github.svg" alt="Github Logo">Github</div>
+                <ul class="competence-detail">
+                      <li>Gestion de versions</li>
+                      <li>Création de dépôts</li>
+                      <li>Gestion des sauvegardes</li>
+                      <li>Travail en groupe</li>
+                </ul>
+              </div>
+
+              <div id="Python" class="competences-liste">
+                <div><img src="images/competences/python.svg" alt="Python Logo">Python</div>
+                <ul class="competence-detail">
+                      <li>Programmation algorithmique</li>
+                      <li>Manipulation de variables, boucles, conditions</li>
+                      <li>Résolution de problèmes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+            <div id="Informations-Competences" class="box">
+
+              <div class="Competence-transversale">
+                <h3>COMPETENCES COMPLEMENTAIRES</h3>
+                  <ul>
+                    <li>Travail en équipe</li>
+                    <li>Autonomie</li>
+                    <li>Organisation et Gestion du temps</li>
+                    <li>Capacités d’adaptation</li>
+                  </ul>
+              </div>
+
+              <div class="outils">
+                <h3>OUTILS</h3>
+                  <ul>
+                    <li>Visual Studio Code et VSCodium</li>
+                    <li>Git Github</li>
+                    <li>phpMyAdmin</li>
+                    <li>MySQL / MariaDB</li>
+                    <li>Clip Studio Paint et Procreate</li>
+                    <li>VirtualBox</li>
+                  </ul>
+            </div>
+
+        </div>
+      </section>
+
+                    
+      
+        <section id="block2" class="screen"> <!-- PARCOURS SCOLAIRE ET STAGE -->
+          <div class="inner-grid">
+            <div id="Titre-block2" class="box">
+              <h2>MON PARCOURS</h2>
+            </div>
+            <div id="Contenu1-block2" class="box"> 
+              <div class="texte">
+                <h3>BTS SIO</h3>
+                <p>Option SLAM - Solutions Logicielles et Applications Métiers</p>
+                <p>2023 - 2025 - Campus Saint-aspais, Melun</p>
+                <a href="bts.php">En savoir plus sur le BTS</a>
+              </div>
+              <img src="images/saintaspais.jpg">
+            </div>
+            <div id="Contenu2-block2" class="box">
+              <img src="images/pmf.jpg">
+              <div class="texte">
+                <h3>BAC GÉNÉRAL</h3>
+                <p>Spécialité : Mathématiques, Science de la Vie et de la Terre, SES en 1ère.</p>
+                <p>2021 - 2024 - Lycée Pierre Mandes France, Savigny-le-Temple</p>
+              </div>
+            </div>
+            <div id="Contenu3-block2" class="box">
+              <div class="texte2">
+              <h2>MES STAGES</h2>
+              <p>Afin de valider mon BTS, j'ai du faire un stage tout les ans en informatique, plus précisément en développement web afin d'acquérir une expérience professionnelle durant ma formation. </p>
+              </div>
+            </div>
+            <div id="Contenu4-block2" class="box">
+              <h3>STAGE 1</h3>
+              <div class="stage-box"><div><p>Du 20/05/2025 au 04/07/2025</p></div>
+              <div><p><span class="texte-style">Entreprise :</span> Lïlo et Site</p></div></div>
+              <p><span class="texte-style">Objectif :</span> crée un site de e-commerce pour une boutique de bijoux fait mains à partir d’une base d’un site</p>
+              <p><span class="texte-style">Technologies utilisées :</span> HTML/CSS, Java Script, ReactJS et NodeJS, AWS, PostreSQL, WSL</p>
+              <p><span class="texte-style">Mes Missions :</span></p>
+              <ul>
+                <li>Modification des seeds (produit, matériaux, catégories)</li>
+                <li>Adaptation des tests automatisé</li>
+                <li>Modification du frontend (images, couleurs, structures)</li>
+                <li>Analyse et résolution d'erreurs</li>
+              </ul>
+              <a href="files\COURTOIS-Alicia-rapport de stage-SIO1.pdf" target="_blank">Mon rapport de stage</a>
+            </div>
+            <div id="Contenu5-block2" class="box">
+              <h3>STAGE 2</h3>
+              <div class="stage-box"><div><p>Du 05/01/2026 au 06/02/2026</p></div>
+              <div><p><span class="texte-style">Entreprise :</span> NIAK NIAK KADRIC</p></div></div>
+              <p><span class="texte-style">Objectif :</span> crée un site de e-commerce pour la vente de plante carnivore avec un autre stagiaire en partant de rien</p>
+              <p><span class="texte-style">Technologies utilisées :</span> HTML/CSS, PHP, phpMyAdmin, Github</p>
+              <p><span class="texte-style">Mes Missions :</span></p>
+              <ul>
+                <li>Rédaction d'un cahier des charges </li>
+                <li>Création d’une base de données MySQL</li>
+                <li>Création de maquettes de Site Web</li>
+                <li>Intégration de maquettes en HTML/CSS (structures, design, Responsive)</li>
+                <li>Mise en place de la méthode MVC</li>
+                <li>Gestion des utilisateurs et authentification</li>
+              </ul>
+              <a href="files\COURTOIS-Alicia-rapport de stage-SIO2.pdf" target="_blank">Mon rapport de stage</a>
+            </div>
+         </div>
+        </section>
+      
+        <section id="block3" class="screen"> <!-- PROJETS -->
+          <div class="inner-grid">
+            <div id="block3-sub-grid" class="box sub-grid">
+              <div id="Titre-block3" class="box">
+                <h2>Mes Projets</h2>
+              </div>
+              <div id="Contenu1-block3" class="box">
+                <div id="projet1">
+                <h3>Projet Koo2fourchette</h3>
+                <p>Création d’un site de recettes en ligne fait à partir d'une maquette donnée.</p>
+                <p><span class="texte-style">Technologies utilisées :</span> HTML/CSS, PHP, Debian sur Virtualbox</p>
+                <p><span class="texte-style">Missions :</span></p>
+                <ul>
+                  <li>Intégration de maquettes en HTML/CSS</li>
+                  <li>Création d’un CRUD en PHP/MySQL</li>
+                  <li>Gestion des utilisateurs et authentification</li>
+                </ul>
+                <img src="images/projets/koo2fourchette.png">
+              </div>
+              </div>
+              <div id="Contenu2-block3" class="box">
+                <div id="projet2">
+                <h3>Projet Cafétéria</h3>
+                <p>Création d’un site de e-commerce pour la vente de plante carnivore avec un autre stagiaire en partant de rien</p>
+                <p><span class="texte-style">Technologies utilisées :</span> HTML/CSS, PHP,Boostrap, phpMyAdmin</p>
+                <p><span class="texte-style">Missions :</span></p>
+                <ul>
+                  <li>Intégration de maquettes en HTML/CSS</li>
+                  <li>Création d’un CRUD en PHP/MySQL</li>
+                  <li>Gestion des utilisateurs et authentification</li>
+                </ul>
+                <img src="images/projets/projet2.png">
+                </div>
+              </div>
+              <div id="Contenu3-block3" class="box">
+                <div id="projet3">
+                <h3>En cours</h3>
+                <div>
+                  <h3>Projet Symfonie</h3>
+                  <p>Création d’un site de e-commerce pour une boutique de bijoux fait mains
+                  à partir d’une base d’un site</p>
+                  <p><span class="texte-style">Technologies utilisées :</span> HTML, CSS, PHP, MySQL</p>
+                  <p><span class="texte-style">Missions :</span></p>
+                  <ul>
+                    <li>Intégration de maquettes en HTML/CSS</li>
+                    <li>Création d’un CRUD en PHP/MySQL</li>
+                    <li>Gestion des utilisateurs et authentification</li>
+                  </ul>
+                </div>
+                <h3>A venir</h3>
+                <div>
+                  <h3>Projet 4</h3>
+                  <p>Création d’un site de gestion des repas et de préparation de liste de courses</p>
+                  <p>Technologies utilisées : HTML, CSS, PHP, MySQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+        </section>
+      
+        <section id="footer"> <!-- FOOTER --> 
+          <div class="inner-grid">
+            <div id="Contenu1-footer" class="box">
+              <div id="navbar-footer">
+              <h2>Navigation</h2> 
+              <div id="navbar-footer-row">
+                <div class="accueil-footer">
+              <ul>
+                <li><a href="apropos.php">Accueil</a></li>
+                <li><a href="#block-profil">Profil</a></li>
+                <li><a href="#block-competence">Compétences</a></li>
+                <li><a href="#block2">Parcours</a></li>
+              </ul>
+              </div>
+              <div class="autres-footer">
+              <ul>
+                <li><a href="#block3">Projets</a></li>
+                <li><a href="veille.php">Veille</a></li>
+                <li><a href="bts.php">BTS</a></li>
+                <li><a href="contact.php">Contact</a></li>
+              </ul>
+              </div>
+              </div>
+              </div>
+            <div id="coordonnees-footer">
+              <h2>Mes coordonnées</h2>
+                <ul class="coordonnees-footer">
+                    <li><span class="svg-footer"><img src="images/contact/phone1.svg"></span><span class="texte-footer">06 10 38 07 10</span></li>
+                    <li><span class="svg-footer"><img src="images/contact/mail1.svg"></span><span class="texte-footer">alicia.courtois22@gmail.com</span></li>
+                    <li><span class="svg-footer"><img src="images/contact/lieu.svg"></span><span class="texte-footer">77176, France</span></li>
+                </ul>
+            </div>
+            <div id="reseaux-footer">
+              <h2>Mes réseaux</h2>
+                <ul class="reseaux-footer">
+                  <li><span class="svg-footer"><img src="images/contact/github.svg"></span><span class="texte-footer">Patate22</span></li>
+                  <li><span class="svg-footer"><img src="images/contact/linkedin.svg"></span><span class="texte">Alicia Courtois</span></li>
+                </ul>  
+              
+            </div>
+            </div>
+
+            <div id="Contenu2-footer" class="box">
+              <p>© 2026 Alicia Courtois.</p>
+            </div>
+
+        </section>
+        
+      </div>
+    </div>
+
+    </div>
+
+</body>
+</html>

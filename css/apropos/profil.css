@@ -1,0 +1,230 @@
+#block-profil .inner-grid {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows:   1fr 4fr 3fr;
+    grid-template-areas:
+      "Titre-profil Titre-profil"
+      "image-profil Contenu1-profil"
+      "image-profil Contenu2-profil";
+    gap: 0.5rem;
+    filter:brightness(0.9);
+  }
+
+  #Titre-profil { grid-area: Titre-profil; }
+  #image-profil { grid-area: image-profil; }
+  #Contenu1-profil { grid-area: Contenu1-profil; }
+  #Contenu2-profil { grid-area: Contenu2-profil; }
+
+  #Titre-profil {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+    font-weight: bold;
+    margin: 15px 20px 10px 20px;
+    background: none;
+  }
+
+  #Titre-profil h2 {
+    background: #A2023F;
+    padding: 20px 20px;
+    width: 100%;
+    margin:0;
+  }
+
+  #image-profil {
+    background-image: url("../../images/profil3.png");
+    margin: 0px 0px 20px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #Contenu1-profil {
+    padding: 10px;
+    margin: 0px 90px 0px 50px;
+    background: none;
+    border-radius: 5px;
+    color :#0f0e0e;
+    font-size: 1.3rem;
+  }
+
+  #Contenu1-profil p {
+    color:#4b4747;
+  }
+
+  #Contenu1-profil h3 {
+    font-size: 2.5rem;
+    margin: 0px;
+  }
+
+
+  #Contenu2-profil {
+    background: none;
+    padding: 10px;
+    margin: 0px 90px 20px 50px;
+    color: #0f0e0e;
+  }
+
+  #Contenu2-profil h3 {
+    font-size: 2.5rem;
+    margin: 0px;
+  } 
+
+  #cv, #lettre{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: stretch;
+    font-size: 1.5rem;
+  }
+
+  #cv > div, #lettre > div {
+    display: flex;
+    flex: 1 1 0;
+    align-items: stretch;
+  }
+
+  #cv > div:first-child, #lettre > div:first-child {
+    flex: 3 1 0;
+  }
+  #cv > div:last-child, #lettre > div:last-child {
+    flex: 1 1 0;
+  }
+
+  #Contenu2-profil .bouton {
+    background: #A2023F;
+    width: 100%;
+    height: 100%;
+    min-width: unset;
+    max-width: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    padding: 1rem 0.5rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-sizing: border-box;
+  }
+
+  #Contenu2-profil .bouton-download {
+    background: #A2023F;
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  #Contenu2-profil .bouton-download img {
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    min-height: 16px !important;
+    max-width: 16px !important;
+    max-height: 16px !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+    display: inline-block;
+    vertical-align: middle;
+    background: none;
+    padding: 0;
+  }
+
+  #Contenu2-profil .bouton:hover,
+  #Contenu2-profil .bouton-download:hover {
+    background: #7a0130;
+  }
+
+  #cv a, #lettre a{
+    text-decoration: none; 
+    color: white;
+    width: 100%;
+    background: #A2023F;
+  }
+
+  #Contenu2-profil a img,
+  #Contenu2-profil .bouton-download img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+    background: none;
+    padding: 0;
+  }
+
+  #cv > div:first-child a.bouton,
+  #lettre > div:first-child a.bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #cv > div:first-child a.bouton:hover,
+  #lettre > div:first-child a.bouton:hover,
+  #Contenu2-profil .bouton-download:hover {
+    background: #7a0130 !important;
+    color: white;
+    transition: background 0.2s;
+  }
+
+  #cv > div:last-child a,
+  #lettre > div:last-child a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: #A2023F;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+
+  #cv > div:last-child a:hover,
+  #lettre > div:last-child a:hover {
+    background: #7a0130 !important;
+  }
+
+  img.bouton-download {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+    max-width: 32px !important;
+    max-height: 32px !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+    display: inline-block;
+    vertical-align: middle;
+    background: none !important;
+    padding: 0;
+    transition: none !important;
+  }
+
+  #curriculum-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: stretch;
+    width: 100%;
+  }
+
+

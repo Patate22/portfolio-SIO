@@ -1,0 +1,162 @@
+#block-competence .inner-grid {
+    display: grid;
+    grid-template-areas:
+        "Competence Informations-Competences";
+    grid-template-columns: 1fr 0.3fr;
+    margin: 0;
+    padding: 0;
+    background:white;
+}
+
+#Competence { grid-area: Competence; }
+#Informations-Competences { grid-area: Informations-Competences; }
+
+#block-competence img {
+    width: 20px;
+    height: 40px;
+}
+
+#Competence {
+    background: #920239;
+    border-radius: 2px;
+    padding: 0rem 2.5rem 0rem 2.5rem;
+    font-size: 1rem;
+    margin : 20px 20px 20px 20px;
+    color: black;
+    /* border: 5px solid white */
+}
+
+#Competence h2 {
+    font-size: 1.6rem;
+    color :#ffffff;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px 18px 0px;
+    background: #920239;
+    padding: 1rem;
+}
+
+
+
+#flexbox-competence {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:3%;
+    height: 40%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: stretch;
+    color:#474545;
+}
+
+#Competence .competences-liste {
+    padding: 1rem;
+    border-radius: 1%;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    background: #0f0f0f;
+    /* background: #dae3f0; */
+    flex: 1 1 250px;
+    min-width: 31%;
+    max-width: 31%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.7rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+}
+
+#Competence .competences-liste div {
+    display:flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 20px;
+    width: 100%;
+}
+
+
+
+#Competence .competences-liste img {
+    margin: 0;
+    background: #0f0f0f;
+    width: 15%;
+    padding:0.3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+#Competence .competences-liste ul li {
+    list-style: none;
+    font-size: 16px;
+    padding: 0.1rem;
+}
+
+#Competence .competences-liste ul {
+    padding: 0.5rem;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    margin:0;
+    margin-top: 0.5rem;
+}
+
+#Informations-Competences {
+    padding: 0rem 2rem 0rem 2rem;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin : 20px 20px 20px 0px;
+    background: #f0eded;
+    color:#0f0f0f;
+;
+}
+
+#Informations-Competences ul li{
+    list-style: none;
+    padding: 0.5rem 0;
+    font-size: 20px;
+}
+
+#Informations-Competences ul{
+    padding: 0;
+}
+
+#Informations-Competences .Competence-transversale {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* border: solid 5px black; */
+    border-radius: 2px;
+    margin-top: 3rem;
+}
+
+
+#Informations-Competences h3{
+    /* background: #920239; */
+    width: 100%;
+    padding: 1rem;
+    font-size: 25px;
+    color :#920239;
+    margin:0;
+    border: 2px solid #000000;
+}
+
+#Informations-Competences .outils {
+    margin-top: 3rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* border: solid 2px black; */
+    border-radius: 2px;
+}

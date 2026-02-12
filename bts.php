@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="css/bts.css?v=<?= time(); ?>">
+</head>
+<body>
+
+    <div class="portfolio">
+    <div id="bts-wrapper">
+        <section id="bts" class="screen">
+            
+            <div id="Navbar" class="navbar">
+                <ul>
+                    <li><a href="apropos.php">Accueil</a></li>
+                    <li><a href="veille.php">Veille</a></li>
+                    <li><a href="bts.php">BTS</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <div id="Contenu1" class="box">
+                <img src="images\saintaspais-bts.jpg" alt="BTS SIO">
+                <div class="contenu-texte">
+                    <h2>BTS</h2>
+                    <p>Le <strong>BTS Services Informatiques aux Organisations (SIO)</strong> est une formation <strong>Bac+2</strong> orientée vers les métiers de l’informatique en entreprise. Elle permet d’acquérir des compétences techniques solides en développement, réseaux et systèmes informatiques, tout en travaillant sur des <span class="texte-style">projets concrets</span> proches des besoins réels des organisations. La formation prévois un <strong>stage</strong> par ans entre 5 et 6 semaines pour constuire une éxpériene professionnel</p>
+                    <p>La formation aborde plusieurs domaines essentiels de l’informatique tels que le développement d’applications, la gestion des bases de données, la cybersécurité, les réseaux, les systèmes d’exploitation ainsi que la gestion du patrimoine informatique. Elle prépare ainsi les étudiants à s’adapter à des environnements techniques variés et en constante évolution.</p>
+                    <div id="lien-bts"><p>Pour en savoir plus : <a href="https://institutionsaintaspais.fr/formations/bts-services-informatiques-aux-organisations-option-slam-et-sisr/">BTS SIO - Campus Saint-aspais</a></p></div>
+                </div>
+            </div>
+            <div id="Contenu2" class="box">
+                <h2>Option SISR – Solutions d’Infrastructure, Systèmes et Réseaux</h2>
+
+                <p>L’option <strong>SISR</strong> forme des spécialistes des <strong>infrastructures informatiques</strong>. Elle est axée sur l’installation, la configuration et la maintenance des réseaux, serveurs et systèmes. Cette option prépare à assurer la sécurité, la disponibilité et le bon fonctionnement des systèmes informatiques d’une organisation.</p>
+                <p><span class="texte-style">Débouchés professionnels :</span> Pilote, d'exploitation, administrateur systèmes et réseaux, Gestionnaire du parc information de l'entreprise, Analyste d'exploitation information, Technicien des réseaux de télécommunications, Technicien d'infrastructure, Technicien systèmes et réseaux.</p>
+
+            </div>
+            <div id="Contenu3" class="box">
+                <h2>Option SLAM – Solutions Logicielles et Applications Métiers</h2>
+                <p>L’option <strong>SLAM</strong> est orientée vers le <strong>développement d’applications</strong>. Elle permet d’apprendre à analyser les besoins des utilisateurs, concevoir des solutions logicielles et développer des applications adaptées aux contextes professionnels. Elle prépare aux métiers liés à la programmation et au développement informatique.</p>
+                <p><span class="texte-style">Débouchés professionnels :</span> Analyste d'applications, analyste d'études, analyste programmeur, chargé d'études informatiques, développeur d'applications informatiques, informaticiens d'études.</p>
+            </div>
+        </section>
+
+        <section id="footer"> <!-- FOOTER --> 
+          <div class="inner-grid">
+            <div id="Contenu1-footer" class="box">
+              <div id="navbar-footer">
+              <h2>Navigation</h2> 
+              <div id="navbar-footer-row">
+                <div class="accueil-footer">
+              <ul>
+                <li><a href="apropos.php">Accueil</a></li>
+                <li><a href="#block-profil">Profil</a></li>
+                <li><a href="#block-competence">Compétences</a></li>
+                <li><a href="#block2">Parcours</a></li>
+              </ul>
+              </div>
+              <div class="autres-footer">
+              <ul>
+                <li><a href="#block3">Projets</a></li>
+                <li><a href="veille.php">Veille</a></li>
+                <li><a href="bts.php">BTS</a></li>
+                <li><a href="contact.php">Contact</a></li>
+              </ul>
+              </div>
+              </div>
+              </div>
+            <div id="coordonnees-footer">
+              <h2>Mes coordonnées</h2>
+                <ul class="coordonnees-footer">
+                    <li><span class="svg-footer"><img src="images/contact/phone1.svg"></span><span class="texte-footer">06 10 38 07 10</span></li>
+                    <li><span class="svg-footer"><img src="images/contact/mail1.svg"></span><span class="texte-footer">alicia.courtois22@gmail.com</span></li>
+                    <li><span class="svg-footer"><img src="images/contact/lieu.svg"></span><span class="texte-footer">77176, France</span></li>
+                </ul>
+            </div>
+            <div id="reseaux-footer">
+              <h2>Mes réseaux</h2>
+                <ul class="reseaux-footer">
+                  <li><span class="svg-footer"><img src="images/contact/github.svg"></span><span class="texte-footer">Patate22</span></li>
+                  <li><span class="svg-footer"><img src="images/contact/linkedin.svg"></span><span class="texte">Alicia Courtois</span></li>
+                </ul>  
+              
+            </div>
+            </div>
+
+            <div id="Contenu2-footer" class="box">
+              <p>© 2026 Alicia Courtois.</p>
+            </div>
+        </section>
+    </div>
+    </div>
+
+</body>
+</html>

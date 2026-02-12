@@ -1,0 +1,117 @@
+  #block3 > .inner-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "block3-sub-grid";
+    gap: 0.5rem;
+  }
+  
+  #block3 .sub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+      "Titre-block3 Titre-block3 Titre-block3"
+      "Contenu1-block3 Contenu2-block3 Contenu3-block3";
+    gap: 0rem;
+    margin:30px;
+    border: 10px solid #920239;
+  }
+
+  #block3-sub-grid { grid-area: block3-sub-grid; }
+  #Titre-block3 { grid-area: Titre-block3; }
+  #Contenu1-block3 { grid-area: Contenu1-block3; }
+  #Contenu2-block3 { grid-area: Contenu2-block3; }
+  #Contenu3-block3 { grid-area: Contenu3-block3; }
+
+  #Titre-block3 {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+    font-weight: bold;
+    color:#920239;
+    border: 10px solid #920239;
+    border-bottom: 0px;
+    margin : 5px 5px 0px 5px;
+
+  }
+
+  #Contenu1-block3{
+    color :rgb(0, 0, 0);
+    border: 10px solid #920239;
+    border-top: 0px;
+    border-right: 0px;
+    margin : 0px 0px 5px 5px;
+    padding: 0px 10px 20px 20px;
+  }
+
+  #projet1 {
+    background: #f0eded;
+    height: 100%;
+    width: 100%;
+    border-radius: 1%;
+    padding: 4%;
+  }
+
+  #projet1 h3{
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  #projet1 img {
+    max-width:90%;
+    height: 50%;
+    border-radius: 1%;
+  }
+
+  #Contenu2-block3{
+    color :rgb(0, 0, 0);
+    border: 10px solid #920239;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    margin : 0px 0px 5px 0px;
+    padding: 0px 10px 20px 10px;
+  }
+
+  #projet2 {
+    background: #f0eded;
+    height: 100%;
+    width: 100%;
+    border-radius: 1%;
+    padding: 4%;
+  }
+
+  #projet2 h3{
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  #projet2 img {
+    max-width:90%;
+    height: 50%;
+    border-radius: 1%;
+  }
+
+  #Contenu3-block3{
+    color :rgb(0, 0, 0);
+    border: 10px solid #920239;
+    border-top: 0px;
+    border-left: 0px;
+    margin : 0px 5px 5px 0px;
+    padding: 0px 20px 20px 10px;
+  }
+
+  #projet3 {
+    background: #f0eded;
+    height: 100%;
+    width: 100%;
+    border-radius: 1%;
+    padding: 4%;
+  }
+
+  #projet3 h3{
+    margin: 0px;
+    margin-bottom: 10px;
+  }

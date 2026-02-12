@@ -1,0 +1,230 @@
+.listes {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.petite-liste {
+  width: 120px;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+.grande-liste {
+  flex: 1;
+}
+.grande-liste li {
+  border: 1px solid #fff;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: black;
+}
+.petite-liste li {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.petite-liste li img {
+  height: 100%;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+.petite-liste li,
+.grande-liste li {
+  margin-bottom: 12px;
+}
+.petite-liste li:last-child,
+.grande-liste li:last-child {
+  margin-bottom: 0;
+}
+
+#contact {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "Navbar Navbar Navbar"
+      "Contenu1 Contenu2 Contenu2";
+    gap: 0;
+    text-align: center;
+  }
+
+#Navbar { grid-area: Navbar; }
+#Contenu1 { grid-area: Contenu1; }
+#Contenu2 { grid-area: Contenu2; }
+
+
+#Contenu1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    margin: 0px 90px 0px 120px;
+    background: #A2023F;
+    /* border-radius: 10px; */
+    color: white;
+}
+
+#Contenu1 h2 {
+  font-size: 35px;
+  margin-top: 24px;
+  background: #fff;
+  color:#A2023F;
+  margin-bottom:0px;
+}
+
+#Contenu1 h2:first-child {
+  margin-top: 0px;
+}
+
+#Contenu1 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#Contenu1 ul li {
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 50px;
+  color: white;
+  margin-right:8px;
+}
+
+#Contenu1 h2 + ul.coordonnees {
+  margin-bottom: 48px;
+}
+
+#Contenu1 ul{
+  /* border: 1.5px solid #ffffff; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#Contenu2 {
+    padding: 0px;
+    margin: 150px 190px 150px 100px;
+    background: #f0eded;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+#Contenu2 h2 {
+  font-size: 50px;
+  margin-bottom: 0px;
+  color:#A2023F;
+  
+}
+
+#Contenu2 p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#Contenu2 form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+#Contenu2 input[type="email"],
+#Contenu2 textarea {
+  margin: 0;
+  margin-bottom: 0;
+  border: 1.5px solid #888;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1rem;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 90%;
+  display: block;
+  outline: none;
+  transition: border 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+#Contenu2 input[type="email"]:focus,
+#Contenu2 textarea:focus {
+  border-color: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#Contenu2 textarea {
+  min-height: 190px;
+  resize: vertical;
+}
+
+#Contenu2 button {
+  width: 90%;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+#Contenu2 button:hover {
+  background: #444;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.coordonnees, .reseaux {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.coordonnees li, .reseaux li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.coordonnees .svg, .reseaux .svg {
+  width: 44px;
+  min-width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coordonnees .svg img, .reseaux .svg img {
+  height: 32px;
+  width: 32px;
+  filter: brightness(0) invert(1);
+}
+.coordonnees .texte, .reseaux .texte {
+  flex: 1;
+  margin-left: 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  border: 1.5px solid #fff;
+  border-radius: 24px;
+  padding: 6px 24px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#contact-wrapper {
+  height: 100vh;          
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+#contact, #contact section {
+  min-height: 100vh; 
+  scroll-snap-align: start; 
+}
+
+#footer {
+  min-height: 30vh;
+  scroll-snap-align: end; 
+}
