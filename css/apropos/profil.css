@@ -1,9 +1,8 @@
 #block-profil .inner-grid {
     display: grid;
     grid-template-columns: 4fr 6fr;
-    grid-template-rows:   1fr 4fr 3fr;
+    grid-template-rows:   1fr auto;
     grid-template-areas:
-      "Titre-profil Titre-profil"
       "image-profil Contenu1-profil"
       "image-profil Contenu2-profil";
     gap: 0.5rem;
@@ -16,53 +15,49 @@
   #Contenu2-profil { grid-area: Contenu2-profil; }
 
   #Titre-profil {
-    display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center; /* vertical */
-    font-weight: bold;
-    margin: 15px 20px 10px 20px;
-    background: none;
-  }
-
-  #Titre-profil h2 {
-    background: #A2023F;
-    padding: 20px 20px;
-    width: 100%;
-    margin:0;
+    display: none;
   }
 
   #image-profil {
     background-image: url("../../images/profil3.png");
-    margin: 0px 0px 20px 20px;
+    margin: 40px 10px 20px 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   #Contenu1-profil {
-    padding: 10px;
-    margin: 0px 90px 0px 50px;
-    background: none;
+    padding: 20px 30px;
+    margin: 40px 20px 0px 0px;
+    background: #6d5c93;
     border-radius: 5px;
-    color :#0f0e0e;
+    color: #e3ddd1;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   #Contenu1-profil p {
-    color:#4b4747;
+    color: #d4cfc7;
   }
 
   #Contenu1-profil h3 {
     font-size: 2.5rem;
     margin: 0px;
+    color: #e3ddd1;
+    text-align: center;
   }
 
 
   #Contenu2-profil {
     background: none;
-    padding: 10px;
-    margin: 0px 90px 20px 50px;
-    color: #0f0e0e;
+    padding: 20px 30px;
+    margin: 0px 20px 20px 20px;
+    color: #020202;
+    border-radius: 5px;
   }
 
   #Contenu2-profil h3 {
@@ -94,7 +89,7 @@
   }
 
   #Contenu2-profil .bouton {
-    background: #A2023F;
+    background: #6d5c93;
     width: 100%;
     height: 100%;
     min-width: unset;
@@ -104,7 +99,7 @@
     justify-content: center;
     font-size: 1.1em;
     padding: 1rem 0.5rem;
-    color: white;
+    color: #e3ddd1;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -113,7 +108,7 @@
   }
 
   #Contenu2-profil .bouton-download {
-    background: #A2023F;
+    background: #6d5c93;
     aspect-ratio: 1/1;
     width: 100%;
     height: 100%;
@@ -123,7 +118,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.1em;
-    color: white;
+    color: #e3ddd1;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -149,14 +144,14 @@
 
   #Contenu2-profil .bouton:hover,
   #Contenu2-profil .bouton-download:hover {
-    background: #7a0130;
+    background: #5a4a7d;
   }
 
   #cv a, #lettre a{
     text-decoration: none; 
-    color: white;
+    color: #e3ddd1;
     width: 100%;
-    background: #A2023F;
+    background: #6d5c93;
   }
 
   #Contenu2-profil a img,
@@ -181,8 +176,8 @@
   #cv > div:first-child a.bouton:hover,
   #lettre > div:first-child a.bouton:hover,
   #Contenu2-profil .bouton-download:hover {
-    background: #7a0130 !important;
-    color: white;
+    background: #5a4a7d !important;
+    color: #e3ddd1;
     transition: background 0.2s;
   }
 
@@ -194,14 +189,14 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background: #A2023F;
+    background: #6d5c93;
     border-radius: 4px;
     transition: background 0.2s;
   }
 
   #cv > div:last-child a:hover,
   #lettre > div:last-child a:hover {
-    background: #7a0130 !important;
+    background: #5a4a7d !important;
   }
 
   img.bouton-download {
@@ -228,4 +223,89 @@
     width: 100%;
   }
 
+/* ===== RESPONSIVE PROFIL ===== */
 
+@media (max-width: 1100px) {
+  #image-profil {
+    display: none;
+  }
+
+  #block-profil .inner-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "Contenu1-profil"
+      "Contenu2-profil";
+  }
+
+  #Contenu1-profil {
+    margin: 40px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #block-profil .inner-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "Titre-profil"
+      "image-profil"
+      "Contenu1-profil"
+      "Contenu2-profil";
+  }
+
+  #image-profil {
+    min-height: 300px;
+    margin: 0 20px;
+  }
+
+  #Contenu1-profil {
+    margin: 0px 20px;
+    font-size: 1.1rem;
+  }
+
+  #Contenu1-profil h3 {
+    font-size: 2rem;
+  }
+
+  #Contenu2-profil {
+    margin: 0px 20px 20px 20px;
+  }
+
+  #Contenu2-profil h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #cv, #lettre {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #image-profil {
+    min-height: 250px;
+    margin: 0 10px;
+  }
+
+  #Contenu1-profil {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+
+  #Contenu1-profil h3 {
+    font-size: 1.5rem;
+  }
+
+  #Contenu2-profil {
+    margin: 0 10px 10px 10px;
+  }
+
+  #Contenu2-profil h3 {
+    font-size: 1.5rem;
+  }
+
+  #cv, #lettre {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+}

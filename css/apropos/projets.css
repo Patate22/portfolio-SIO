@@ -1,22 +1,25 @@
-  #block3 > .inner-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "block3-sub-grid";
-    gap: 0.5rem;
+#block3 > .inner-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
   }
   
   #block3 .sub-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.7fr;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
     grid-template-areas:
       "Titre-block3 Titre-block3 Titre-block3"
       "Contenu1-block3 Contenu2-block3 Contenu3-block3";
-    gap: 0rem;
-    margin:30px;
-    border: 10px solid #920239;
+    gap: 30px;
+    background: none;
+    padding: 0;
+    border: none;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: stretch;
   }
 
   #block3-sub-grid { grid-area: block3-sub-grid; }
@@ -25,38 +28,125 @@
   #Contenu2-block3 { grid-area: Contenu2-block3; }
   #Contenu3-block3 { grid-area: Contenu3-block3; }
 
+  #Contenu1-block3, #Contenu1-block3 * {
+    color: #020202 !important;
+  }
+
   #Titre-block3 {
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center; /* vertical */
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
-    color:#920239;
-    border: 10px solid #920239;
-    border-bottom: 0px;
-    margin : 5px 5px 0px 5px;
-
+    color: #6d5c93;
+    background: #fff !important;
+    padding: 18px 0 18px 0;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  }
+  #Titre-block3 h2 {
+    font-size: clamp(1.3rem, 3vw, 2.2rem);
+    margin: 0;
+    letter-spacing: 1px;
+    color: #6d5c93 !important;
   }
 
-  #Contenu1-block3{
-    color :rgb(0, 0, 0);
-    border: 10px solid #920239;
-    border-top: 0px;
-    border-right: 0px;
-    margin : 0px 0px 5px 5px;
-    padding: 0px 10px 20px 20px;
+  #Contenu1-block3, #Contenu2-block3, #Contenu3-block3 {
+    min-height: 520px;
+    height: auto;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: #fff !important;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 24px 18px 18px 18px;
+    transition: box-shadow 0.2s;
+  }
+  #Contenu1-block3:hover, #Contenu2-block3:hover, #Contenu3-block3:hover {
+    box-shadow: 0 8px 24px rgba(109,92,147,0.18);
   }
 
-  #projet1 {
-    background: #f0eded;
-    height: 100%;
-    width: 100%;
-    border-radius: 1%;
-    padding: 4%;
+  #Contenu1-block3 h3, #Contenu2-block3 h3, #Contenu3-block3 h3 {
+    color: #6d5c93 !important;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #Contenu1-block3 img, #Contenu2-block3 img {
+    display: block;
+    margin: 0 auto 14px auto;
+    max-width: 90%;
+    max-height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(109,92,147,0.10);
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 0;
+    height: 340px;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(109,92,147,0.10);
+  }
+  @media (max-width: 1100px) {
+    #Contenu1-block3 img, #Contenu2-block3 img {
+      height: 220px;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    #Contenu1-block3 img, #Contenu2-block3 img {
+      height: 120px;
+      max-width: 100%;
+    }
+  }
+
+  #Contenu1-block3 ul, #Contenu2-block3 ul, #Contenu3-block3 ul {
+    margin: 8px 0 0 0;
+    padding-left: 0;
+    text-align: left;
+  }
+  #Contenu1-block3 li, #Contenu2-block3 li, #Contenu3-block3 li {
+    margin-bottom: 3px;
+    font-size: 1rem;
+    text-align: left;
+    list-style-position: inside;
+  }
+
+  #Contenu1-block3 p, #Contenu2-block3 p, #Contenu3-block3 p {
+    margin: 6px 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #Contenu1-block3 .texte-style, #Contenu2-block3 .texte-style, #Contenu3-block3 .texte-style {
+    display: block;
+    text-align: left;
+    margin-left: 0;
+    color: #6d5c93 !important;
+    font-weight: bold;
+  }
+
+  #Contenu3-block3 h3 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+
+  #projet1, #projet2, #projet3 {
+    background: transparent !important;
   }
 
   #projet1 h3{
     margin: 0px;
     margin-bottom: 10px;
+    color: #020202 !important;
   }
 
   #projet1 img {
@@ -66,13 +156,10 @@
   }
 
   #Contenu2-block3{
-    color :rgb(0, 0, 0);
-    border: 10px solid #920239;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-    margin : 0px 0px 5px 0px;
-    padding: 0px 10px 20px 10px;
+    color: #020202;
+    padding: 10px;
+    background: #e3ddd1;
+    overflow-y: auto;
   }
 
   #projet2 {
@@ -95,12 +182,10 @@
   }
 
   #Contenu3-block3{
-    color :rgb(0, 0, 0);
-    border: 10px solid #920239;
-    border-top: 0px;
-    border-left: 0px;
-    margin : 0px 5px 5px 0px;
-    padding: 0px 20px 20px 10px;
+    color: #020202;
+    padding: 10px 15px 10px 10px;
+    background: #e3ddd1;
+    overflow-y: auto;
   }
 
   #projet3 {
@@ -115,3 +200,237 @@
     margin: 0px;
     margin-bottom: 10px;
   }
+
+  #Contenu1-block3, #Contenu2-block3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #Contenu1-block3 img, #Contenu2-block3 img {
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 0;
+    height: 120px;
+    width: auto;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(109,92,147,0.10);
+  }
+  @media (max-width: 1100px) {
+    #Contenu1-block3 img, #Contenu2-block3 img {
+      height: 90px;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    #Contenu1-block3 img, #Contenu2-block3 img {
+      height: 60px;
+      max-width: 100%;
+    }
+  }
+
+/* ===== RESPONSIVE PROJETS ===== */
+
+@media (max-width: 768px) {
+  #block3 > .inner-grid {
+    padding: 0 15px;
+  }
+
+  #block3 .sub-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "Titre-block3"
+      "Contenu1-block3"
+      "Contenu2-block3"
+      "Contenu3-block3";
+    max-height: none;
+    gap: 10px;
+  }
+
+  #projet1 img,
+  #projet2 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #block3 > .inner-grid {
+    padding: 0 10px;
+  }
+
+  #block3 .sub-grid {
+    gap: 8px;
+  }
+}
+
+/* === MODERNISATION PROJETS === */
+#block3 .sub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "Titre-block3 Titre-block3 Titre-block3"
+    "Contenu1-block3 Contenu2-block3 Contenu3-block3";
+  gap: 30px;
+  background: none;
+  padding: 0;
+  border: none;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#Titre-block3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #6d5c93;
+  background: #fff !important;
+  padding: 18px 0 18px 0;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+#Titre-block3 h2 {
+  font-size: clamp(1.3rem, 3vw, 2.2rem);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+#Contenu1-block3, #Contenu2-block3, #Contenu3-block3 {
+  min-height: 520px;
+  height: auto;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: #fff !important;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 24px 18px 18px 18px;
+  transition: box-shadow 0.2s;
+}
+#Contenu1-block3:hover, #Contenu2-block3:hover, #Contenu3-block3:hover {
+  box-shadow: 0 8px 24px rgba(109,92,147,0.18);
+}
+
+#Contenu1-block3 h3, #Contenu2-block3 h3, #Contenu3-block3 h3 {
+  color: #6d5c93 !important;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#Contenu1-block3 img, #Contenu2-block3 img {
+  display: block;
+  margin: 0 auto 14px auto;
+  max-width: 90%;
+  max-height: 180px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(109,92,147,0.10);
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: 0;
+  height: 340px;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(109,92,147,0.10);
+}
+
+#Contenu1-block3 ul, #Contenu2-block3 ul, #Contenu3-block3 ul {
+  margin: 8px 0 0 0;
+  padding-left: 0;
+  text-align: left;
+}
+#Contenu1-block3 li, #Contenu2-block3 li, #Contenu3-block3 li {
+  margin-bottom: 3px;
+  font-size: 1rem;
+  text-align: left;
+  list-style-position: inside;
+}
+
+#Contenu1-block3 p, #Contenu2-block3 p, #Contenu3-block3 p {
+  margin: 6px 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#Contenu1-block3 .texte-style, #Contenu2-block3 .texte-style, #Contenu3-block3 .texte-style {
+  display: block;
+  text-align: left;
+  margin-left: 0;
+  color: #6d5c93 !important;
+  font-weight: bold;
+}
+
+#Contenu3-block3 h3 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+#Contenu1-block3, #Contenu2-block3 {
+  padding-bottom: 0 !important;
+}
+
+#Contenu1-block3 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+@media (max-width: 1100px) {
+  #block3 .sub-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "Titre-block3"
+      "Contenu1-block3"
+      "Contenu2-block3"
+      "Contenu3-block3";
+    gap: 18px;
+    max-width: 700px;
+  }
+  #Contenu1-block3, #Contenu2-block3, #Contenu3-block3 {
+    min-height: 350px;
+    padding: 18px 10px 14px 10px;
+  }
+  #Contenu1-block3 img, #Contenu2-block3 img {
+    max-width: 100%;
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  #block3 .sub-grid {
+    gap: 10px;
+    padding: 0;
+  }
+  #Titre-block3 {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 10px;
+  }
+  #Contenu1-block3, #Contenu2-block3, #Contenu3-block3 {
+    min-height: 180px;
+    padding: 10px 4px 10px 4px;
+    border-radius: 10px;
+  }
+  #Contenu1-block3 img, #Contenu2-block3 img {
+    max-width: 100%;
+    max-height: 80px;
+    border-radius: 7px;
+  }
+  #Contenu1-block3 h3, #Contenu2-block3 h3, #Contenu3-block3 h3 {
+    font-size: 1.05rem;
+  }
+}
+/* === FIN MODERNISATION PROJETS === */

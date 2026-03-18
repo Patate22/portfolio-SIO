@@ -1,10 +1,5 @@
 
-/* Scroll snap strict pour scroll section par section */
 #veille-wrapper {
-  height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -12,29 +7,17 @@
 #veille.screen,
 #resultat-veille.screen {
   min-height: 100vh;
-  height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
-#footer.screen {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
-#footer.screen {
-  scroll-snap-align: end;
 }
 
 #veille h2 {
     font-size: 1.6rem;
-    color :#ffffff;
+    color : #e3ddd1;
     text-align: center;
     width: 100%;
     margin: 20px 0px 0px 0px;
-    background: #920239;
+    background: #6d5c93;
     padding: 1rem;
-    height: auto;;
+    height: auto;
 }
 
 #veille-entiere {
@@ -49,4 +32,27 @@
 #veille .inner-grid > h2 {
   height: auto;
   flex: 0 0 auto;
+}
+
+/* ===== RESPONSIVE VEILLE ===== */
+
+@media (max-width: 768px) {
+  #veille-entiere {
+    padding: 5px 20px;
+  }
+
+  #veille h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #veille-entiere {
+    padding: 5px 10px;
+  }
+
+  #veille h2 {
+    font-size: 1.1rem;
+    padding: 0.6rem;
+  }
 }

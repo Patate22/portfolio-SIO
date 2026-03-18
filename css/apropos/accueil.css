@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     margin: 20px;
-    background-color: #A2023F;
+    background-color: #6d5c93;
     /* background-image: url(../../images/grain.svg) ; */
     /* box-shadow: 0 4px 12px rgba(5, 5, 5, 0.582); */
     filter: brightness(0.9);
@@ -25,35 +25,85 @@
   .intro {
     display: flex;
     align-items: center;
-    gap : 50px;
+    justify-content: center;
+    gap: clamp(10px, 2vw, 50px);
+    padding: clamp(5px, 1vw, 20px);
+    padding-right: clamp(20px, 5vw, 100px);
+  }
+
+  .intro > div:first-child {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
   }
 
   .intro p {
     max-width: 1100px;
     white-space: normal;
-    font-size: 1.5rem;
-    padding-left: 80px;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    padding-left: clamp(0px, 2vw, 80px);
     margin:0;
-    margin-top:-20px;
+    margin-top: clamp(-20px, -1.5vw, 0px);
     text-align: center;
   }
 
   #imgAccueil img {
-    width: 500px;
-    height: 500px;
+    width: clamp(150px, 30vw, 500px);
+    height: clamp(150px, 30vw, 500px);
   }
 
   h1 {
-    margin:0px;
-    font-size: 11rem;
+    margin: 0px;
+    margin-bottom: clamp(10px, 1.5vw, 25px);
+    font-size: clamp(2.5rem, 7vw, 11rem);
+    white-space: nowrap;
   }
 
 #Contenu2-block0 {
-    background-color: #050505;
+    background-color: #020202;
     display: flex;
-    justify-content: center; /* horizontal */
+    justify-content: center;
     align-items: center; 
-    margin:0px 300px 20px 300px;
+    margin: 0px clamp(20px, 15vw, 300px) 20px clamp(20px, 15vw, 300px);
     flex-direction: column;
-
   }
+
+/* ===== RESPONSIVE ACCUEIL ===== */
+
+@media (max-width: 768px) {
+  #block0 .inner-grid {
+    grid-template-rows: 3fr 1fr;
+  }
+
+  .intro {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .intro > div:first-child {
+    flex: initial;
+  }
+
+  h1 {
+    font-size: clamp(3.5rem, 10vw, 6rem);
+    margin-bottom: clamp(20px, 4vw, 50px);
+  }
+
+  #imgAccueil {
+    display: none;
+  }
+
+  #Contenu1-block0 {
+    margin: 10px;
+  }
+
+  #Contenu2-block0 {
+    margin: 0px 10px 10px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro p {
+    margin-top: 0;
+  }
+}

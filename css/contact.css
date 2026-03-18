@@ -16,7 +16,7 @@
   margin-bottom: 12px;
   padding: 8px 12px;
   border-radius: 6px;
-  color: black;
+  color: #020202;
 }
 .petite-liste li {
   height: 48px;
@@ -41,7 +41,7 @@
 
 #contact {
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
@@ -63,16 +63,16 @@
     height: 100%;
     padding: 20px;
     margin: 0px 90px 0px 120px;
-    background: #A2023F;
+    background: #6d5c93;
     /* border-radius: 10px; */
-    color: white;
+    color: #e3ddd1;
 }
 
 #Contenu1 h2 {
   font-size: 35px;
   margin-top: 24px;
-  background: #fff;
-  color:#A2023F;
+  background: #e3ddd1;
+  color:#6d5c93;
   margin-bottom:0px;
 }
 
@@ -89,7 +89,7 @@
   margin-bottom: 8px;
   padding: 8px 12px;
   border-radius: 50px;
-  color: white;
+  color: #e3ddd1;
   margin-right:8px;
 }
 
@@ -108,13 +108,13 @@
     margin: 150px 190px 150px 100px;
     background: #f0eded;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: #020202;
 }
 
 #Contenu2 h2 {
   font-size: 50px;
   margin-bottom: 0px;
-  color:#A2023F;
+  color:#6d5c93;
   
 }
 
@@ -136,7 +136,7 @@
   margin-bottom: 0;
   border: 1.5px solid #888;
   border-radius: 6px;
-  background: #fff;
+  background: #e3ddd1;
   font-size: 1rem;
   font-family: 'Segoe UI', 'Arial', sans-serif;
   padding: 10px;
@@ -161,7 +161,7 @@
 #Contenu2 button {
   width: 90%;
   background: #222;
-  color: #fff;
+  color: #e3ddd1;
   border: none;
   border-radius: 6px;
   padding: 10px 24px;
@@ -198,33 +198,62 @@
   width: 32px;
   filter: brightness(0) invert(1);
 }
-.coordonnees .texte, .reseaux .texte {
-  flex: 1;
-  margin-left: 12px;
-  color: #fff;
-  font-size: 1.1rem;
-  border: 1.5px solid #fff;
-  border-radius: 24px;
-  padding: 6px 24px;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/* ===== RESPONSIVE CONTACT ===== */
+
+@media (max-width: 768px) {
+  #contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "Navbar"
+      "Contenu1"
+      "Contenu2";
+  }
+
+  #Contenu1 {
+    margin: 0 20px;
+    padding: 20px;
+  }
+
+  #Contenu1 h2 {
+    font-size: 28px;
+  }
+
+  #Contenu2 {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  #Contenu2 h2 {
+    font-size: 35px;
+  }
+
+  #Contenu2 textarea {
+    min-height: 120px;
+  }
 }
 
+@media (max-width: 480px) {
+  #Contenu1 {
+    margin: 0 10px;
+    padding: 15px;
+  }
 
-#contact-wrapper {
-  height: 100vh;          
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-}
+  #Contenu1 h2 {
+    font-size: 22px;
+  }
 
-#contact, #contact section {
-  min-height: 100vh; 
-  scroll-snap-align: start; 
-}
+  #Contenu2 {
+    margin: 10px;
+    padding: 15px;
+  }
 
-#footer {
-  min-height: 30vh;
-  scroll-snap-align: end; 
+  #Contenu2 h2 {
+    font-size: 28px;
+  }
+
+  #Contenu2 p {
+    font-size: 16px;
+  }
 }

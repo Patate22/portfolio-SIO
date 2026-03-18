@@ -8,6 +8,7 @@
       "Contenu2 Contenu3";
     gap: 1rem;
     text-align: center;
+    min-height: 100vh;
   }
 
 #Navbar { grid-area: Navbar; }
@@ -19,16 +20,16 @@
     display: flex;
     flex-direction: row;
     height: 100%;
-    background: #A2023F;
-    color: white;
+    background: #6d5c93;
+    color: #e3ddd1;
     gap: 20px;
   }
 
   #Contenu1 h2 {
     font-size: 40px;
     margin-bottom: 16px;
-    background: white;
-    color:#A2023F;
+    background: #e3ddd1;
+    color:#6d5c93;
     width: 100%;
   }
 
@@ -51,7 +52,7 @@
 
 #Contenu2 {
   background: rgb(235, 232, 232);
-    color: rgb(0, 0, 0);
+    color: #020202;
     display: flex;
     margin: 10px 70px 30px 70px;
     padding: 20px;
@@ -61,7 +62,7 @@
 #Contenu3 {
   background: rgb(235, 232, 232);
     display: flex;
-    color: rgb(0, 0, 0);
+    color: #020202;
     margin: 10px 70px 30px 70px;
     padding: 20px;
     flex-direction: column;
@@ -74,22 +75,6 @@
 
 p {
     font-size: 20px;
-}
-
-#bts-wrapper {
-  height: 100vh;          
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-}
-
-#bts, #bts section {
-  min-height: 100vh; 
-  scroll-snap-align: start; 
-}
-
-#footer {
-  min-height: 30vh;
-  scroll-snap-align: end; 
 }
 
 /* Suppression de tout style sur les liens dans BTS */
@@ -106,4 +91,59 @@ p {
 #lien-bts {
   text-align: center;
   width: 100%;
+}
+
+/* ===== RESPONSIVE BTS ===== */
+
+@media (max-width: 768px) {
+  #bts {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "Navbar"
+      "Contenu1"
+      "Contenu2"
+      "Contenu3";
+  }
+
+  #Contenu1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Contenu1 img {
+    max-width: 100%;
+    max-height: 250px;
+    padding: 10px;
+  }
+
+  .contenu-texte {
+    margin-right: 0;
+    padding: 0 15px;
+  }
+
+  #Contenu2,
+  #Contenu3 {
+    margin: 10px 20px;
+    padding: 15px;
+  }
+
+  #Contenu1 h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #Contenu2,
+  #Contenu3 {
+    margin: 10px;
+  }
+
+  #Contenu1 h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }

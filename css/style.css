@@ -6,12 +6,12 @@
 
 .texte-style {
   font-weight: 800;
-  color:#0f0e0e;
+  color:#020202;
 }
 
 strong {
   font-weight: 800;
-  color:#0f0e0e;  
+  color:#020202;  
 }
 
 p,li{
@@ -21,7 +21,7 @@ p,li{
 h1 {
   font-family: "Lobster", static;
   font-weight: bold;
-  color:#0f0e0e;
+  color:#020202;
 }
 
 h2, h3 {
@@ -34,7 +34,7 @@ html, body {
   padding: 0;
   border: 0;
   overflow-x: hidden;
-  background:/*#f2f0e6*/ /*#FFF9F2*/white;
+  background:/*#f2f0e6*/ /*#FFF9F2*/#e3ddd1;
   font-family: "Libre Franklin", sans-serif;
 }
 
@@ -49,11 +49,12 @@ html {
 
 .screen {
   min-height: 100vh;
-  padding-top: var(--navbar-height); /* si navbar fixe */
+  width: 100%;
+  padding-top: var(--navbar-height);
 }
 
 .screen > .inner-grid {
-  height: calc(100vh - var(--navbar-height));
+  min-height: calc(100vh - var(--navbar-height));
   display: grid;
 }
 
@@ -61,27 +62,12 @@ html {
 #bts-wrapper,
 #contact-wrapper,
 #veille-wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-}
-
-#apropos section,
-#bts section,
-#contact section,
-#veille section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}  
-
-* {
-  box-sizing: border-box;
 }
 
 .box {
   /* background: #565656; */
-  color: white;
+  color: #e3ddd1;
   margin: 0;
   padding: 0;
 }
@@ -96,8 +82,8 @@ html {
   display: flex;
   align-items: center;
   z-index: 1000;
-  background-color: #050505;
-  color: white;
+  background-color: #020202;
+  color: #e3ddd1;
    padding: 0 1.5rem;
 }
 
@@ -119,24 +105,20 @@ img {
   height: auto;
 }
 
-/* FOOTER*/
+/* FOOTER */
 
 #footer {
-  min-height: 20vh;
-  max-height: 35vh;
-  scroll-snap-align: none;
-  display: grid;
-  background: /*#141414*/#050505;
+  background: #020202;
 }
 
 #footer .inner-grid {
   display: grid;
-  height: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 0.5fr;
+  grid-template-rows: auto auto;
   grid-template-areas:
       "Contenu1-footer"
       "Contenu2-footer";
+  padding: 20px 0;
 }
 
 #Contenu1-footer { grid-area: Contenu1-footer; }
@@ -147,8 +129,8 @@ p {
 }
 
 #Contenu1-footer {
-  background: /*#141414*/#050505;
-  color: white;
+  background: /*#141414*/#020202;
+  color: #e3ddd1;
   font-size: 1.2rem;
   display: flex;
   justify-content: space-evenly;
@@ -167,7 +149,7 @@ p {
 }
 
 #Contenu1-footer #navbar-footer-row {
-  border: 2px solid #fff9fc;
+  border: 2px solid #e3ddd1;
   padding: 1rem;
   padding-right:2rem;
   border-radius: 5px;
@@ -184,20 +166,21 @@ p {
 
 #Contenu1-footer ul li a {
   text-decoration: none;
-  color: white;
+  color: #e3ddd1;
 }
 
 #Contenu1-footer h2 {
   margin-top: 35px;
   margin-bottom: 10px;
-  color: #A2023F;
+  color: #6d5c93;
 }
 
 #Contenu2-footer {
-  background: /*#141414*/#0f0e0e;
-  color: white;
+  background: #020202;
+  color: #e3ddd1;
   font-size: 1.2rem;
   text-align: center;
+  padding: 10px 0;
 }
 
 .svg-footer img {
@@ -205,12 +188,6 @@ p {
   height: 45px;
   filter: brightness(0) invert(1);
   margin-right: 1rem;
-}
-
-#footer.screen {
-  min-height: 20vh;
-  max-height: 35vh;
-  scroll-snap-align: end;
 }
 
 /* .modal-content iframe,
@@ -236,7 +213,7 @@ p {
 }
 
 .modal-content {
-  background: white;
+  background: #e3ddd1;
   width: 90%;
   max-width: 1200px;
   height: 85vh;
@@ -257,4 +234,60 @@ p {
   gap: 1rem;
   justify-content: center;
   margin-top: 0.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 60px;
+  }
+
+  #Navbar {
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  #Navbar ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #Contenu1-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  #Contenu1-footer #navbar-footer-row {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .svg-footer img {
+    width: 28px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --navbar-height: 50px;
+  }
+
+  #Navbar ul {
+    gap: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  #Contenu1-footer {
+    font-size: 0.85rem;
+  }
+
+  #Contenu2-footer {
+    font-size: 0.9rem;
+  }
 }
