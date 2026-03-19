@@ -65,7 +65,7 @@
     margin: 0px 90px 0px 120px;
     background: #6d5c93;
     /* border-radius: 10px; */
-    color: #e3ddd1;
+    color: #ffffff;
 }
 
 #Contenu1 h2 {
@@ -74,6 +74,8 @@
   background: #e3ddd1;
   color:#6d5c93;
   margin-bottom:0px;
+  background: #fff !important;
+  
 }
 
 #Contenu1 h2:first-child {
@@ -136,7 +138,7 @@
   margin-bottom: 0;
   border: 1.5px solid #888;
   border-radius: 6px;
-  background: #e3ddd1;
+  background: #e7e5e7 !important;
   font-size: 1rem;
   font-family: 'Segoe UI', 'Arial', sans-serif;
   padding: 10px;
@@ -255,5 +257,28 @@
 
   #Contenu2 p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  #Contenu1 {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto 32px auto;
+    padding: 32px 24px;
+    box-sizing: border-box;
+  }
+  #Contenu2 {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    padding: 32px 24px;
+    box-sizing: border-box;
   }
 }
