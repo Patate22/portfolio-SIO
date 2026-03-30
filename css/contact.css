@@ -1,3 +1,15 @@
+#Contenu1 a, #Contenu1 a:visited, #Contenu1 a:active {
+  color: #fff;
+  text-decoration: none;
+  font-weight: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  transition: color 0.15s;
+}
+#Contenu1 a:hover {
+  color: #020202;
+}
 .listes {
   display: flex;
   flex-direction: row;
@@ -187,6 +199,13 @@
   display: flex;
   align-items: center;
   margin-bottom: 18px;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.coordonnees-footer li, .reseaux-footer li {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 .coordonnees .svg, .reseaux .svg {
   width: 44px;

@@ -1,3 +1,30 @@
+.btn-certif, .btn-certif:visited, .btn-certif:active {
+  text-decoration: none !important;
+  outline: none;
+  box-shadow: none;
+}
+.btn-certif.violet {
+  display: inline-block;
+  margin: 14px auto 0 auto;
+  padding: 12px 32px;
+  background: #6d5c93;
+  color: #fff;
+  border: 1.5px solid #59487a;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-family: "Exo2", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.5px;
+  box-shadow: none;
+  transition: none;
+}
+.btn-certif.violet:hover {
+  background: #59487a;
+  color: #fff;
+}
 :root {
   --main-radius: 5px;
   --main-padding: 5px;
@@ -98,6 +125,28 @@ html {
 #Navbar a {
   text-decoration: none;
   color: inherit;
+
+}
+
+.btn-certif {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 22px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Exo2", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.btn-certif:hover {
+  background-color: #0056b3;
+  color: #e3ddd1;
 }
 
 img {
@@ -109,6 +158,16 @@ img {
 
 #footer {
   background: #020202;
+  min-height: auto;
+}
+
+#footer.screen {
+  min-height: auto;
+  padding-top: 0;
+}
+
+#footer.screen > .inner-grid {
+  min-height: auto;
 }
 
 #footer .inner-grid {

@@ -92,8 +92,8 @@
               <div id="curriculum-row">
               <!-- CV -->
               <div id="cv">
-                <div><a href="files/CV.pdf" target="_blank" class="bouton">Ouvrir CV</a></div>
-                <div style="display:flex;align-items:center;justify-content:center;height:100%;"><a href="files/CV.pdf" download >
+                <div><a href="files/CV-Alicia-Courtois.pdf" target="_blank" class="bouton">Ouvrir CV</a></div>
+                <div style="display:flex;align-items:center;justify-content:center;height:100%;"><a href="files/CV-Alicia-Courtois.pdf" download >
                   <span style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;">
                     <img src="images/download.svg" alt="Télécharger CV" class="bouton-download" style="width:32px;height:32px;max-width:32px;max-height:32px;object-fit:contain;display:block;" />
                   </span>
@@ -221,9 +221,19 @@
               <div class="certifications">
                 <h3>CERTIFICATIONS</h3>
                   <ul>
-                    <li>MOOC de l'ANSSI - SecNumacadémie</li>
-                    <li>PIX - Certification de compétences numériques</li>
-                  </ul>
+                      <li>
+                        MOOC de l'ANSSI - SecNumacadémie
+                        <div style="margin-top:8px;">
+                          <a href="files/certification-mooc.pdf" target="_blank" class="btn-certif violet">Voir la certification MOOC</a>
+                        </div>
+                      </li>
+                      <li>
+                        PIX - Certification de compétences numériques
+                        <div style="margin-top:8px;">
+                          <a href="files/certification-pix.pdf" target="_blank" class="btn-certif violet">Voir la certification PIX</a>
+                        </div>
+                      </li>
+                    </ul>
               </div>
 
         </div>
@@ -331,23 +341,34 @@
               </div>
               <div id="Contenu3-block3" class="box">
                 <div id="projet3">
-                <h3>En cours</h3>
-                <div>
-                  <h3>Projet Symfony
-                  </h3>
-                  <p>Création d’un site de gestion d'un club de e-sport.</p>
-                  <p><span class="texte-style">Technologies utilisées :</span> HTML, CSS, symfony, debian sur virtualbox, easyadmin</p>
-                  <p><span class="texte-style">Missions :</span></p>
-                  <ul>
-                    <li>Installation du serveur sur debian avec easyadmin</li>
-                    <li>Création d’un CRUD en Symfony</li>
-                  </ul>
+                  <h3>Projet Tickets</h3>
+                <p>Création d’un site permettant à des étudiants de faire des tickets en cas de problèmes qui seront traités par un technicien.</p>
+                <p><span class="texte-style">Technologies utilisées :</span> HTML/CSS, PHP, phpMyAdmin</p>
+                <p><span class="texte-style">Missions :</span></p>
+                <ul>
+                  <li>Création et intégration de maquettes en HTML/CSS</li>
+                  <li>Utilisation de la méthode MVC</li>
+                  <li>Création d’un CRUD en PHP/MySQL</li>
+                  <li>Gestion des utilisateurs et authentification</li>
+                </ul>
+                <img src="">
+            
                 </div>
-                <h3>A venir</h3>
-                <div>
-                  <h3>Projet 4</h3>
+              </div>
+              <!-- Ligne En cours / A venir -->
+              <div class="projets-etat-ligne">
+                <div class="projets-colonne-etat">
+                  <h3>En cours</h3>
+                  <div>
+                  <p><strong>Projet Symfony :</strong> Création d’un site de gestion d'un club de e-sport.</p>
+                  <p><span class="texte-style">Technologies utilisées :</span> HTML, CSS, symfony, debian sur virtualbox, easyadmin</p>
+                  </div>
+                </div>
+                <div class="projets-colonne-etat">
+                  <h3>À venir</h3>
+                  <div>
                   <p>Création d’un site de gestion des repas et de préparation de liste de courses</p>
-                  <p>Technologies utilisées : HTML, CSS, PHP, MySQL</p>
+                  <p><span class="texte-style">Technologies utilisées :</span> HTML, CSS, PHP, MySQL</p>
                   </div>
                 </div>
               </div>
@@ -390,8 +411,8 @@
             <div id="reseaux-footer">
               <h2>Mes réseaux</h2>
                 <ul class="reseaux-footer">
-                  <li><span class="svg-footer"><img src="images/contact/github.svg"></span><span class="texte-footer">Patate22</span></li>
-                  <li><span class="svg-footer"><img src="images/contact/linkedin.svg"></span><span class="texte">Alicia Courtois</span></li>
+                  <li><span class="svg-footer"><img src="images/contact/github.svg"></span><a class="texte-footer" href="https://github.com/AliciaCourtois" target="_blank" rel="noopener">AliciaCourtois</a></li>
+                  <li><span class="svg-footer"><img src="images/contact/linkedin.svg"></span><a class="texte-footer" href="https://www.linkedin.com/in/alicia-courtois-073254359/" target="_blank" rel="noopener">Alicia Courtois</a></li>
                 </ul>  
               
             </div>

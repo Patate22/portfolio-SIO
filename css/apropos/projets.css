@@ -433,4 +433,86 @@
     font-size: 1.05rem;
   }
 }
+
+/* === PROJETS EN COURS / À VENIR === */
+.projets-etat-ligne {
+  grid-column: 1 / -1;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.projets-colonne-etat {
+  flex: 1;
+  min-width: 200px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(109,92,147,0.10);
+  transition: box-shadow 0.2s;
+}
+
+.projets-colonne-etat:hover {
+  box-shadow: 0 8px 24px rgba(109,92,147,0.18);
+}
+
+.projets-colonne-etat h3 {
+  color: #6d5c93;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.projets-colonne-etat ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.projets-colonne-etat li {
+  margin-bottom: 3px;
+  font-size: 1rem;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.projets-colonne-etat p,
+.projets-colonne-etat span {
+  color: #020202 !important;
+  margin: 6px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.projets-colonne-etat .texte-style {
+  display: inline;
+  text-align: left;
+  margin-left: 0;
+  color: #6d5c93 !important;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .projets-etat-ligne {
+    gap: 20px;
+  }
+  
+  .projets-colonne-etat {
+    min-width: auto;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projets-etat-ligne {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .projets-colonne-etat {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
 /* === FIN MODERNISATION PROJETS === */
