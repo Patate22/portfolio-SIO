@@ -19,9 +19,9 @@
   }
 
   #image-profil {
-    background-image: url("../../images/profil3.png");
+    background-image: url("../../images/profil.png");
     margin: 40px 10px 20px 20px;
-    background-size: cover;
+    background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
   }
