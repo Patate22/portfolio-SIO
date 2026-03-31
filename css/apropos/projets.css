@@ -453,6 +453,11 @@
   transition: box-shadow 0.2s;
 }
 
+/* Cacher seulement la colonne "En cours" */
+.projets-colonne-etat:first-child {
+  display: none;
+}
+
 .projets-colonne-etat:hover {
   box-shadow: 0 8px 24px rgba(109,92,147,0.18);
 }
@@ -491,6 +496,7 @@
   color: #6d5c93 !important;
   font-weight: bold;
 }
+*/
 
 @media (max-width: 768px) {
   .projets-etat-ligne {
